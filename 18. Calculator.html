@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 02</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        margin: 5px;
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        border: 2px solid #8f8f9d;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    input {
+        border: 2px solid #8f8f9d;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    button {
+        height: 44px;
+        width: 44px;
+        background: white;
+        border: 2px solid #8f8f9d;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div class="center">
+
+        Value 1 = <input type="number" id="one" value="">
+        <br>
+        Value 2 = <input type="number" id="two" value="">
+        <br>
+        <button id="sub" onclick="add()">+</button>
+        <button id="sub" onclick="sub()">-</button>
+        <button id="sub" onclick="mul()">*</button>
+        <button id="sub" onclick="div()">/</button>
+        <button id="sub" onclick="cle()">C</button>
+        <br>
+        Answer = <input type="number" id="ans" value="" readonly>
+
+    </div>
+    <script>
+
+        let one = document.getElementById("one");
+        let two = document.getElementById("two");
+
+        function add() {
+            let ans = Number(one.value) + Number(two.value);
+            document.getElementById("ans").value = ans;
+        }
+        function sub() {
+            let ans = Number(one.value) - Number(two.value);
+            document.getElementById("ans").value = ans;
+        }
+        function mul() {
+            let ans = Number(one.value) * Number(two.value);
+            document.getElementById("ans").value = ans;
+        }
+        function div() {
+            let ans = Number(one.value) / Number(two.value);
+            document.getElementById("ans").value = ans;
+        }
+        function cle() {
+            document.getElementById("one").value = "";
+            document.getElementById("two").value = "";
+            document.getElementById("ans").value = "";
+        }
+    </script>
+
+</body>
+
+</html>

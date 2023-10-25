@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.p1, .p2, .p3 {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 615px;
+    transition: width 0.5s;
+}
+.p1 > div, .p2 > div, .p3 > div {
+    width: 100%;
+    transition: width 0.5s;
+}
+.p1 div:hover {
+    width: 150%;
+}
+.p2 div:hover {
+    width: 210%;
+}
+.p3 div:hover {
+    width: 250%;
+}
+
+.bgi11 {
+    background: url(pictures/Hawkeye.jpg) no-repeat fixed;
+    background-position: -22%;
+}
+.bgi12 {
+    background: url(pictures/Hulk.jpg) no-repeat fixed;
+    background-position: 10%;
+}
+.bgi13 {
+    background: url(pictures/IronMan.jpg) no-repeat fixed;
+    background-position: 35%;
+}
+.bgi14 {
+    background: url(pictures/CaptainAmerica.jpg) no-repeat fixed;
+    background-position: 63%;
+}
+.bgi15 {
+    background: url(pictures/Thor.jpg) no-repeat fixed;
+    background-position: 89%;
+}
+.bgi16 {
+    background: url(pictures/BlackWidow.jpg) no-repeat fixed;
+    background-position: 116%;
+}
+.bgi21 {
+    background: url(pictures/DB.jpg) no-repeat fixed;
+    background-position: -4%;
+}
+.bgi22 {
+    background: url(pictures/DN.jpg) no-repeat fixed;
+    background-position: 23%;
+}
+.bgi23 {
+    background: url(pictures/MDL.jpg) no-repeat fixed;
+    background-position:50%;
+}
+.bgi24 {
+    background: url(pictures/NU.jpg) no-repeat fixed;
+    background-position: 76%;
+}
+.bgi25 {
+    background: url(pictures/SG.jpg) no-repeat fixed;
+    background-position: 104%;
+}
+.bgi301 {
+    background: url(Pictures/13.jpg) no-repeat fixed;
+    background-position: 0%;
+}
+.bgi302 {
+    background: url(Pictures/12.jpg) no-repeat fixed;
+    background-position: 8.33%;
+}
+.bgi303 {
+    background: url(Pictures/11.jpg) no-repeat fixed;
+    background-position: 16.66%;
+}
+.bgi304 {
+    background: url(Pictures/10.jpg) no-repeat fixed;
+    background-position: 24.99%;
+}
+.bgi305 {
+    background: url(Pictures/09.jpg) no-repeat fixed;
+    background-position: 33.32%;
+}
+.bgi306 {
+    background: url(Pictures/08.jpg) no-repeat fixed;
+    background-position: 41.65%;
+}
+.bgi307 {
+    background: url(Pictures/07.jpg) no-repeat fixed;
+    background-position: 49.98%;
+}
+.bgi308 {
+    background: url(Pictures/06.jpg) no-repeat fixed;
+    background-position: 58.31%;
+}
+.bgi309 {
+    background: url(Pictures/05.jpg) no-repeat fixed;
+    background-position: 66.64%;
+}
+.bgi310 {
+    background: url(Pictures/04.jpg) no-repeat fixed;
+    background-position: 74.97%;
+}
+.bgi311 {
+    background: url(Pictures/03.jpg) no-repeat fixed;
+    background-position: 83.30%;
+}
+.bgi312 {
+    background: url(Pictures/02.jpg) no-repeat fixed;
+    background-position: 91.63%;
+}
+.bgi313 {
+    background: url(Pictures/01.jpg) no-repeat fixed;
+    background-position: 99.96%;
+}
+
+.t1 {
+    position: relative;
+    color: white;
+    background: linear-gradient(90deg, rgb(0, 40, 50),rgb(35, 40, 50));
+    width: 100%;
+    height: 615px;
+}
+.t1 h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 230px 60px 50px 60px
+}
+.t1 p {
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 60px 230px 60px
+}

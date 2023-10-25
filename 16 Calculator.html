@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+        .display {
+            width: 87%;
+            height: 75px;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 24px;
+            border: none;
+            text-align: right;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 5px;
+            padding: 10px;
+        }
+
+        button {
+            background-color: darkgrey;
+            border-bottom: 2px solid gray;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightgrey;
+        }
+
+        .clear {
+            grid-column: span 4;
+            background-color: tomato;
+            color: white;
+        }
+
+        .clear:hover {
+            background-color: red;
+        }
+
+        .answer {
+            grid-row: span 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" class="display" readonly>
+        <div class="buttons">
+            <button><sup>o</sup>/<sub>o</sub></button>
+            <button>/</button>
+            <button>*</button>
+            <button>&lt</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="answer">=</button>
+            <button><sup>+</sup>/<sub>-</sub></button>
+            <button>0</button>
+            <button>.</button>
+            <button class="clear">C</button>
+        </div>
+    </div>
+</body>
+
+</html>

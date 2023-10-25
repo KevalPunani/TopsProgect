@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to top right, #FFAD00, #DB1268, #BB00FF);
+            font-family: sans-serif;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 60vh;
+            width: 60vw;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .div {
+            border-radius: 3vh;
+            background-color: white;
+            box-shadow: 0px 0px 10px 0px;
+            width: 30%;
+        }
+
+        svg {
+            border-radius: 2.9vh;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: -140px;
+            font-size: 70px;
+            color: white;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 50px;
+            padding: 0px 30px;
+            font-size: 20px;
+            color: #535353;
+        }
+
+        button {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            font-size: 16px;
+            border-radius: 23px;
+            padding: 10px 20px;
+            margin-top: 16px;
+        }
+
+        .button01 {
+            background-color: #FFAD00;
+            border: 1px solid #FFAD00;
+        }
+
+        .button02 {
+            background-color: #DB1268;
+            border: 1px solid #DB1268;
+        }
+
+        .button03 {
+            background-color: #BB00FF;
+            border: 1px solid #BB00FF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="div">
+            <svg class="svg01" width="300" height="178" viewBox="0 0 300 178" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="149.5" cy="0.5" r="177.5" fill="#FFAD00" />
+            </svg>
+            <h1>1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repellendus laboriosam.</p>
+            <button class="button01">Read More</button>
+        </div>
+        <div class="div">
+            <svg class="svg02" width="300" height="178" viewBox="0 0 300 178" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="149.5" cy="0.5" r="177.5" fill="#DB1268" />
+            </svg>
+            <h1>2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repellendus laboriosam.</p>
+            <button class="button02">Read More</button>
+        </div>
+        <div class="div">
+            <svg class="svg03" width="300" height="178" viewBox="0 0 300 178" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="149.5" cy="0.5" r="177.5" fill="#BB00FF" />
+            </svg>
+            <h1>3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repellendus laboriosam.</p>
+            <button class="button03">Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>
