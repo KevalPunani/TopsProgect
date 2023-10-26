@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EYE</title>
+    <link rel="icon" href="pictures/eye.jpeg">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    body {
+        background-image: url(pictures/background.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    input {
+        border: none;
+        border-bottom: 2px solid gray;
+        outline: none;
+    }
+
+    table {
+        background-color: white;
+    }
+
+    table>tbody>tr:nth-child(1)>td:nth-child(1)>img {
+        width: 182px;
+        height: 300px;
+    }
+
+    table>tbody>tr:nth-child(1)>td:nth-child(2) {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 18px;
+    }
+
+    table>tbody>tr:nth-child(3)>td:nth-child(1) {
+        background-origin: padding-box;
+    }
+
+    table>tbody>tr:nth-child(5)>td:nth-child(1)>select {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid gray;
+        outline: none;
+        color: gray;
+        background: white;
+    }
+
+    table>tbody>tr:nth-child(8)>td:nth-child(1)>center>button {
+        border: none;
+        border-radius: 7px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.795);
+        padding: 10px 30px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <main>
+        <form action="">
+            <table cellspacing="15" cellpadding="5">
+                <tr>
+                    <td rowspan="8"><img src="pictures/Gojo.jpeg"></td>
+                    <td colspan="2">REGISTRATION FORM</td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        <input type="text" size="18" id="firstName" placeholder="First Name" required
+                            autocomplete="off">
+                    </td>
+                    <td colspan="1">
+                        <input type="text" id="lastName" placeholder="Last Name" required autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" size="44" id="username" placeholder="Username" required autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="email" size="44" id="emailAddress" placeholder="Email Address" required
+                            autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select autocomplete="off">
+                            <option selected>Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="password" size="41" id="password" value="" placeholder="Password" required
+                            autocomplete="new-password">
+                        <input type="checkbox" onclick="showPassword()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="password" size="41" id="confirmPassword" value="" placeholder="Confirm Password"
+                            required autocomplete="new-password">
+                        <input type="checkbox" onclick="showConfirmPassword()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <center><button type="button" onclick="matchPassword()">Submit</button></center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <script>
+        let firstName = document.getElementById("firstName");
+        let lastName = document.getElementById("lastName");
+        let userName = document.getElementById("username");
+        let emailAddress = document.getElementById("emailAddress");
+        let password = document.getElementById("password");
+        let confirmPassword = document.getElementById("confirmPassword");
+
+        function showPassword() {
+            if (password.type === "password") { password.type = "text"; }
+            else { password.type = "password"; }
+        }
+
+        function showConfirmPassword() {
+            if (confirmPassword.type === "password") { confirmPassword.type = "text"; }
+            else { confirmPassword.type = "password"; }
+        }
+
+        function matchPassword() {
+            if (firstName.value === "" || lastName.value === "" || userName.value === "" || emailAddress.value === "") {
+                alert("Please fill in all required fields.");
+            }
+            else if (password.value === "" || confirmPassword.value === "") {
+                alert("Please fill in both password fields.");
+            }
+            else if (password.value === confirmPassword.value) {
+                alert("Passwords match!");
+                window.location.href = "welcome.html";
+            }
+            else {
+                alert("Passwords do not match!");
+            }
+        }
+    </script>
+</body>
+
+</html>
